@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+  rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">CELESTIA </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h2>Discover and Register for Exciting Events</h2>
+      <p>Concerts, Seminars, Festivals, and more!</p>
+      <a href="#events" class="btn">Explore Now</a>
+    </div>
+  </section>
+  <section class="events-section" id="events">
+    <h2>Upcoming Events</h2>
+    <div class="filter-search">
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="concert">Concert</button>
+        <button class="filter-btn" data-category="seminar">Seminar</button>
+        <button class="filter-btn" data-category="fest">Fest</button>
+        <button class="filter-btn" data-category="workshop">Workshop</button>
+      </div>
+      <input type="text" id="search-bar" placeholder="Search events...">
+    </div>
+    <div class="event-list">
+      <div class="event-card" 
+        data-category="concert" 
+        data-title="Rocking Beats Concert"
+        data-location="Open Air Arena" 
+        data-description="An exciting music concert featuring top artists.">
+        <img src="https://cdn.pixabay.com/photo/2014/07/09/12/17/live-concert-388160_1280.jpg" alt="Rocking Beats Concert">
+        <h3>Rocking Beats Concert</h3>
+        <p>Location: Open Air Arena</p>
+        <p class="description">An exciting music concert featuring top artists.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" 
+         data-category="seminar" 
+        data-title="Tech Seminar 2025"
+        data-location="Tech Park" 
+        data-description="A seminar on the latest trends in technology.">
+        <img src="https://cdn.pixabay.com/photo/2014/07/06/09/37/lecture-385357_1280.jpg" alt="Tech Seminar 2025">
+        <h3>Tech Seminar 2025</h3>
+        <p>Location: Tech Park</p>
+        <p class="description">A seminar on the latest trends in technology.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="fest" data-title="Winter Festival"
+        data-location="Central Park"
+        data-description="Join us for the annual Winter Festival with food, music, and fun activities.">
+        <img src="https://cdn.pixabay.com/photo/2020/01/15/17/38/fireworks-4768501_1280.jpg"  alt="Winter Festival">
+        <h3>Winter Festival</h3>
+        <p>Location: Central Park</p>
+        <p class="description">Join us for the annual Winter Festival with food, music, 
+          and fun activities.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="workshop" data-title="Creative Writing Workshop"
+        data-location="City Library" data-description="A workshop for aspiring writers.">
+        <img src=" https://cdn.pixabay.com/photo/2015/02/03/23/41/paper-623167_1280.jpg"  alt="Creative Writing Workshop">
+        <h3>Creative Writing Workshop</h3>
+        <p>Location: City Library</p>
+        <p class="description">A workshop for aspiring writers.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="seminar" data-title="Digital Marketing 101"
+        data-location="Downtown Conference Center"
+        data-description="An introductory seminar on digital marketing strategies.">
+        <img 
+         src=" https://cdn.pixabay.com/photo/2019/05/26/06/05/digital-marketing-4229637_1280.jpg" alt="Digital Marketing 101">
+        <h3>Digital Marketing 101</h3>
+        <p>Location: Downtown Conference Center</p>
+        <p class="description">An introductory seminar on digital marketing strategies.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="concert" data-title="Summer Rock Fest"
+        data-location="Beachside Park"
+        data-description="A summer concert with multiple bands and artists.">
+        <img src=" https://cdn.pixabay.com/photo/2023/07/28/11/05/boat-8155029_1280.jpg" alt="Summer Rock Fest">
+        <h3>Summer Rock Fest</h3>
+        <p>Location: Beachside Park</p>
+        <p class="description">A summer concert with multiple bands and artists.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="fest" data-title="Food & Music Carnival"
+        data-location="Riverside Plaza"
+        data-description="A carnival that combines food, live music, and fun activities for all ages.">
+        <img 
+         src=" https://cdn.pixabay.com/photo/2023/05/30/13/46/carnival-8028612_1280.jpg"  alt="Food & Music Carnival">
+        <h3>Food & Music Carnival</h3>
+        <p>Location: Riverside Plaza</p>
+        <p class="description">A carnival that combines food, live music, and fun activities
+           for all ages.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="seminar" data-title="AI & Robotics Forum"
+        data-location="Tech Hub"
+        data-description="A forum on Artificial Intelligence and Robotics innovation.">
+        <img src="https://cdn.pixabay.com/photo/2023/03/14/12/52/ai-generated-7852307_1280.jpg"  alt="AI & Robotics Forum">
+        <h3>AI & Robotics Forum</h3>
+        <p>Location: Tech Hub</p>
+        <p class="description">A forum on Artificial Intelligence and Robotics innovation.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="workshop" data-title="Photography Masterclass"
+        data-location="Studio 101"
+        data-description="An intensive workshop for professional and aspiring photographers.">
+        <img src="https://cdn.pixabay.com/photo/2014/08/23/19/50/photography-425687_1280.jpg"   alt="Photography Masterclass">
+        <h3>Photography Masterclass</h3>
+        <p>Location: Studio 101</p>
+        <p class="description">An intensive workshop for professional and aspiring
+           photographers.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+      <div class="event-card" data-category="workshop" data-title="UX/UI Design Workshop"
+        data-location="Creative Studio"
+        data-description="A workshop on the latest trends in UX/UI design and development.">
+        <img src="https://th.bing.com/th/id/OIP.4L98q-KezETXKED84g9JQwHaES?w=279&h=180&c=7&r=0&o=7&cb=iwp2&dpr=1.3&pid=1.7&rm=3" alt="UX/UI Design Workshop">
+        <h3>UX/UI Design Workshop</h3>
+        <p>Location: Creative Studio</p>
+        <p class="description">A workshop on the latest trends in UX/UI design and 
+          development.</p>
+        <a href="#register" class="btn">Register Now</a>
+      </div>
+    </div>
+  </section>
+  <section id="register" class="register-section">
+  <h2>Register for an Event</h2>
+  <form id="registerForm" class="register-form">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="form-group">
+      <label for="event">Event</label>
+      <select id="event" name="event" required>
+        <option value="" disabled selected>Select an Event</option>
+        <option value="Rocking Beats Concert">Rocking Beats Concert</option>
+        <option value="Tech Seminar 2025">Tech Seminar 2025</option>
+        <option value="Winter Festival">Winter Festival</option>
+        <option value="Creative Writing Workshop">Creative Writing Workshop</option>
+        <option value="Digital Marketing 101">Digital Marketing 101</option>
+        <option value="Summer Rock Fest">Summer Rock Fest</option>
+        <option value="Food & Music Carnival">Food & Music Carnival</option>
+        <option value="AI & Robotics Forum">AI & Robotics Forum</option>
+        <option value="Photography Masterclass">Photography Masterclass</option>
+        <option value="UX/UI Design Workshop">UX/UI Design Workshop</option>
+      </select>
+    </div>
+    <button type="submit" class="btn-register">Submit Registration</button>
+  </form>
+</section>
+    </form>
+  </section>  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="contact-name">Name:</label>
+      <input type="text" id="contact-name" required>
+      <label for="contact-email">Email:</label>
+      <input type="email" id="contact-email" required>
+      <label for="contact-message">Message:</label>
+      <textarea id="contact-message" rows="4"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+  <footer class="site-footer">
+    <p>&copy; 2025 Eventify. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="24" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="24" alt="Twitter"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="24" alt="Instagram"></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
